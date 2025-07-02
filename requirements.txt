@@ -1,6 +1,4 @@
-﻿pandas
 streamlit
-pickle
+pandas
 requests
-time
 gdown
