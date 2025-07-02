@@ -3,6 +3,15 @@ import pickle
 import streamlit as st
 import requests
 import time
+import os
+import gdown
+
+SIMILARITY_FILE = "similarity.pkl"
+
+if not os.path.exists(SIMILARITY_FILE):
+    print("Downloading similarity.pkl...")
+    url = "https://drive.google.com/uc?id=1TyvWqa0-WImBDbHM9uIgh0FON0QN4Dsx"  # your direct link
+    gdown.download(url, SIMILARITY_FILE, quiet=False)
 
 API_KEY = "b1e9d3b7bd4b3930679e686ae66ba769"
 
